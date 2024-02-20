@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/getirFragment">
+
+    <fragment
+        android:id="@+id/getirFragment"
+        android:name="com.example.getirornek.ui.fragments.GetirFragment"
+        android:label="fragment_getir"
+        tools:layout="@layout/fragment_getir" >
+        <action
+            android:id="@+id/action_getirFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/gecisBottomShett"
+            app:destination="@id/getirBottomSheetFragment" />
+        <action
+            android:id="@+id/action_getirFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.getirornek.ui.fragments.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.getirornek.ui.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <dialog
+        android:id="@+id/getirBottomSheetFragment"
+        android:name="com.example.getirornek.ui.fragments.GetirBottomSheetFragment"
+        android:label="fragment_getir_bottom_sheet"
+        tools:layout="@layout/fragment_getir_bottom_sheet" />
+    <fragment
+        android:id="@+id/kampanyalarFragment"
+        android:name="com.example.getirornek.ui.fragments.KampanyalarFragment"
+        android:label="fragment_kampanyalar"
+        tools:layout="@layout/fragment_kampanyalar" />
+</navigation>
