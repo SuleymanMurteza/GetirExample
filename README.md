@@ -1,0 +1,2 @@
+# GetirExample
+recyclerview exercise
